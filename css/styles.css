@@ -7,19 +7,28 @@
   --second-bg-color--: #2f303a;
   --bg-color--: #f5f4fa;
   --bg-secont-bottom--: #f5f4fa;
+  --bg-portfolio--: #e5e5e5;
 }
 body {
   font-family: "roboto", "raleway", sans-serif;
 }
 .logo {
   font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+
+  font-weight: 700;
   font-size: 26px;
   color: var(--tittle-color--);
   text-decoration: none;
 }
-.logo .weblogo {
+.footerlogo {
+  font-family: Raleway;
+
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--second-title-color--);
+  text-decoration: none;
+}
+.weblogo {
   color: var(--acent-color--);
 }
 
@@ -34,7 +43,6 @@ body {
   background-color: var(--second-title-color--);
 }
 .header-link {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -46,15 +54,20 @@ body {
 .header-link:focus {
   color: var(--acent-color--);
 }
-
+.header-navigation .header-link.current {
+  color: var(--acent-color--);
+}
 .header-mail {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: var(--acent-color-);
+  color: var(--text-color--);
+}
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--acent-color--);
 }
 /*--------------HERO----------------*/
 .hero {
@@ -70,7 +83,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  text-align: center;
   color: #ffffff;
   background: var(--acent-color--);
   border: none;
@@ -80,7 +92,6 @@ body {
   background: var(--second-title-color--);
 }
 .featurs-title {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -98,7 +109,6 @@ body {
 }
 /*-------------WORK---------------*/
 .title {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -112,8 +122,6 @@ body {
   background: var(--bg-color--);
 }
 .comand-member {
-  font-family: Roboto;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -123,7 +131,6 @@ body {
   color: var(--title-color--);
 }
 .comand-speciality {
-  font-family: Roboto;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -142,21 +149,22 @@ body {
   background-color: var(--second-bg-color--);
 }
 .address-text {
-  font-family: Roboto;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: var(--second-title-color--);
 }
 .footer-conacts {
-  font-family: Roboto;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-conacts:hover,
+.header-mail:focus {
+  color: var(--acent-color--);
 }
 /*--------------POTFOLIO---------*/
 /*Bottoms*/
@@ -170,15 +178,17 @@ body {
   background: var(--bg-secont-bottom--);
   border: none;
 }
-.button-list:active {
+.button-list:active,
+.button-list:focus {
   background: var(--acent-color--);
+  color: var(--second-title-color--);
 }
 
-/*prijects*/
+/*projects*/
 .project {
+  background-color: var(--bg-portfolio--);
 }
 .project-title {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -186,12 +196,13 @@ body {
   color: var(--title-color--);
 }
 .project-text {
-  font-family: Roboto;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-
   color: var(--text-color--);
+}
+.button .button-list.current {
+  background: var(--acent-color--);
+  color: var(--second-title-color--);
 }
