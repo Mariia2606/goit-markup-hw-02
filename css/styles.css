@@ -8,6 +8,7 @@
   --bg-color--: #f5f4fa;
   --bg-secont-bottom--: #f5f4fa;
   --bg-portfolio--: #e5e5e5;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
 }
 body {
   font-family: "roboto", "raleway", sans-serif;
@@ -160,7 +161,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact-color);
 }
 .footer-conacts:hover,
 .header-mail:focus {
